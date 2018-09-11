@@ -68,45 +68,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Lambo/src/Screens/Classes/Home/HomeViewController.swift"
-            timestampString = "558349836.316076"
+            timestampString = "558352261.550317"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "340"
-            endingLineNumber = "340"
+            startingLineNumber = "321"
+            endingLineNumber = "321"
             landmarkName = "refresh()"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Lambo.HomeViewController.refresh() -&gt; ()"
-                  moduleName = "Lambo"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/sreekanthgudisi/Desktop/LiveProjects/iOS_App/LamboApps/LamboIDentityPool/Lambo/src/Screens/Classes/Home/HomeViewController.swift"
-                  timestampString = "558341392.962364"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "340"
-                  endingLineNumber = "340"
-                  offsetFromSymbolStart = "22">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (__ObjC.AWSTask&lt;__ObjC.AWSCognitoIdentityUserGetDetailsResponse&gt;) -&gt; Swift.Optional&lt;Swift.AnyObject&gt; in Lambo.HomeViewController.refresh() -&gt; ()"
-                  moduleName = "Lambo"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/sreekanthgudisi/Desktop/LiveProjects/iOS_App/LamboApps/LamboIDentityPool/Lambo/src/Screens/Classes/Home/HomeViewController.swift"
-                  timestampString = "558341392.965059"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "341"
-                  endingLineNumber = "341"
-                  offsetFromSymbolStart = "21">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

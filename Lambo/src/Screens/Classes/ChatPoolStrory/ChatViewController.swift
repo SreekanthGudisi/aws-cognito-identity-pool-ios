@@ -28,7 +28,8 @@ var interactionKit: AWSLexInteractionKit?
         setUpLex()
     
         aWSCognitoCredentialsProvider?.getIdentityId()
-        print("aWSCognitoCredentialsProvider?.identityId :-", aWSCognitoCredentialsProvider?.identityId as Any )
+        print("aWSCognitoCredentialsProvider?.getIdentityId() :-", aWSCognitoCredentialsProvider?.getIdentityId() as Any )
+        print("aWSCognitoCredentialsProvider?.identityId :-", aWSCognitoCredentialsProvider?.identityId?.description as Any )
     }
     
     func interactionKit(_ interactionKit: AWSLexInteractionKit, onError error: Error) {
@@ -68,22 +69,4 @@ var interactionKit: AWSLexInteractionKit?
             self.answerLabel.text = response
         }
     }
-    
-    @IBAction func sendMessage(_ sender: UIButton) {
-//        if let text = questionsTextField.text {
-//            messages.append(MSMessage(text: text, origin: .user))
-//            interactionKit.text(inTextOut: text)
-//            questionsTextField.text = nil
-//            DispatchQueue.main.async {
-//                self.tableView.reloadData()
-//            }
-//        }
-    }
-}
-
-
-// MARK :- Alert
-extension ChatViewController {
-    
-
 }

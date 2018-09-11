@@ -119,13 +119,6 @@ class HomeViewController: UIViewController, AWSCognitoAuthDelegate {
         } else {
             //hamburgerMenuTopContraint.constant = 28
         }
-        
-        self.pool = AWSCognitoIdentityUserPool(forKey: AWSCognitoUserPoolsSignInProviderKey)
-        if (self.user == nil) {
-            self.user = self.pool?.currentUser()
-        }
-        self.refresh()
-        
         let vjv = aWSCognitoIdentityGetOpenIdTokenResponse?.token
         print("AWSCognitoIdentityGetOpenIdTokenResponse :-", vjv as Any)
         
@@ -144,8 +137,6 @@ class HomeViewController: UIViewController, AWSCognitoAuthDelegate {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(true)
-        
-        refresh()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -171,15 +162,6 @@ class HomeViewController: UIViewController, AWSCognitoAuthDelegate {
         
         let hjh1 = self.signInProvider?.identityProviderName
         print("signInProvider?.identityProviderName :-", hjh1 as Any)
-        
-//        self.auth.getSession  { (session:AWSCognitoAuthUserSession?, error:Error?) in
-//            if(error != nil) {
-//                self.session = nil
-//                self.alertWithTitle("Error", message: (error! as NSError).userInfo["error"] as? String)
-//            }else {
-//                self.session = session
-//            }
-//        }
         
         refresh ()
         
@@ -258,8 +240,8 @@ class HomeViewController: UIViewController, AWSCognitoAuthDelegate {
     
     @IBAction func logoutButtonTapped(_ sender: Any) {
 
-        loginButtonDidLogOut(logoutbutton)
-        
+     //   loginButtonDidLogOut(logoutbutton)
+        logOutFromAWS()
     }
 
     //MARK: - IBActions
@@ -324,52 +306,7 @@ extension HomeViewController {
             }
         })
     }
-    
-    func refresh() {
-//        DispatchQueue.main.async {
-//            self.title = self.session?.username;
-//            print("Title :-", self.title as Any)
-//
-//            print("Username :-", self.session?.username as Any)
-//            print("accessToken :-", self.session?.accessToken?.tokenString as Any)
-//            print("expirationTime :-", self.session?.expirationTime?.description as Any)
-//            print("refreshToken :-", self.session?.refreshToken?.tokenString as Any)
-//            print("idToken :-", self.session?.idToken?.tokenString as Any)
-//
-//            print("Session :- ", self.session as Any)
-//        }
-        self.user?.getDetails().continueOnSuccessWith { (task) -> AnyObject? in
-            DispatchQueue.main.async(execute: {
-                self.response = task.result
-                self.title = self.user?.username
-                print("self.user?.username :-", self.user?.username as Any)
-                //                self.tableView.reloadData()
-            })
-            return nil
-        }
-        
-//        let cognitoAuth = AWSCognitoAuth.default()
-//        cognitoAuth.getSession(self)  { (session:AWSCognitoAuthUserSession?, error:Error?) in
-//            if(error != nil) {
-//                print((error! as NSError).userInfo["error"] as? String as Any)
-//            }else {
-////                Do something with session
-//                        DispatchQueue.main.async {
-//                            self.title = self.session?.username;
-//                            print("Title :-", self.title as Any)
-//                
-//                            print("Username :-", self.session?.username as Any)
-//                            print("accessToken :-", self.session?.accessToken?.tokenString as Any)
-//                            print("expirationTime :-", self.session?.expirationTime?.description as Any)
-//                            print("refreshToken :-", self.session?.refreshToken?.tokenString as Any)
-//                            print("idToken :-", self.session?.idToken?.tokenString as Any)
-//                
-//                            print("Session :- ", self.session as Any)
-//                        }
-//            }
-//        }
-    }
-    
+
     func alertWithTitle(_ title:String, message:String?) -> Void {
         DispatchQueue.main.async {
             let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.alert)
@@ -381,21 +318,21 @@ extension HomeViewController {
         }
     }
     
-//    func refresh() {
-//        self.user?.getDetails().continueOnSuccessWith { (task) -> AnyObject? in
-//            DispatchQueue.main.async(execute: {
-//                self.response = task.result
-//                self.title = self.user?.username
-////                self.tableView.reloadData()
-//            })
-//            return nil
-//        }
-//    }
+    func refresh() {
+        self.user?.getDetails().continueOnSuccessWith { (task) -> AnyObject? in
+            DispatchQueue.main.async(execute: {
+                self.response = task.result
+                self.title = self.user?.username
+                print("self.response :- ", self.response)
+//                self.tableView.reloadData()
+            })
+            return nil
+        }
+    }
 }
 extension HomeViewController {
     
     func chatviewController() {
-        
         isChatSelect = true
         isWalletSelect = false
         isProfileSelect = false
@@ -415,7 +352,6 @@ extension HomeViewController {
     }
     
     func walletviewControoler() {
-        
         isChatSelect = false
         isWalletSelect = true
         isProfileSelect = false
@@ -448,9 +384,6 @@ extension HomeViewController {
         if (profileViewController == nil) {
             
             let vc = UIStoryboard(name: "Profile", bundle: nil).instantiateViewController(withIdentifier: "ProfileViewController") as! ProfileViewController
-            //            self.corporateUserTypeDictionry?.setObject(corporateSelcted, forKey: "corporateUserType" as NSCopying)
-            //            self.corporateUserTypeDictionry?.setObject(countrYSmallName, forKey: "countrySmallName" as NSCopying)
-            //            vc.corporateUserDic = corporateUserTypeDictionry
             profileViewController = vc
         }
         var frame = viewControllersUIView.frame
@@ -492,8 +425,7 @@ extension HomeViewController : UITableViewDelegate, UITableViewDataSource{
                 self.sideViewLeadingSpace.constant = -275
                 self.view.layoutIfNeeded()
             })
-        }
-        else {
+        } else {
             logOutFromAWS()
         }
         isSelect = false
@@ -554,17 +486,6 @@ extension HomeViewController {
         }else{
             print("UserName is nil")
         }
-        
-//        //profile button
-//        let profileText = String(format: "%@%@", String((SharedInformation.instance().loginResponse?.registration?.firstName?.first)!),
-//                                 String((SharedInformation.instance().loginResponse?.registration?.lastName?.first)!))
-//        profileButton.setTitle(profileText.uppercased(), for: .normal)
-        
-        //        let data = NSData(contentsOf: imageURL as URL)
-        //        print(data!)
-        //        self.personImage.image = UIImage(data: data! as Data)
-        //        self.imageURL = googleUser?.profile.imageURL(withDimension: GoogleSignInProviderProfileImageDimension)
-        // Set any additional proflie attributes here. This method is called after a user signs in with a provider.
     }
 }
 // MARK :- GetFacebookUserData
