@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "18EBB55D0D447F4A94226DE505709931"
+               BlueprintIdentifier = "84226ABE110174107343B5195FD3B27F"
                BlueprintName = "AWSFacebookSignIn"
                ReferencedContainer = "container:Pods.xcodeproj"
                BuildableName = "AWSFacebookSignIn.framework">

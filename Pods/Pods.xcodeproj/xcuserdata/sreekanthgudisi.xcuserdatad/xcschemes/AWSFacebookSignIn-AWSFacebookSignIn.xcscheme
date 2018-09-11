@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "B3B81268472D191686A74D7C8936111D"
+               BlueprintIdentifier = "DF9B923F45AE1A4AEBC609CFE52DA4EF"
                BuildableName = "AWSFacebookSignIn.bundle"
                BlueprintName = "AWSFacebookSignIn-AWSFacebookSignIn"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "B3B81268472D191686A74D7C8936111D"
+            BlueprintIdentifier = "DF9B923F45AE1A4AEBC609CFE52DA4EF"
             BuildableName = "AWSFacebookSignIn.bundle"
             BlueprintName = "AWSFacebookSignIn-AWSFacebookSignIn"
             ReferencedContainer = "container:Pods.xcodeproj">

@@ -860,7 +860,6 @@ static NSString * AWSCognitoAuthAsfDeviceId = @"asf.device.id";
         NSError *error = nil;
         if(claimsData != nil){
             result = [NSJSONSerialization JSONObjectWithData:claimsData options:kNilOptions error:&error];
-            NSLog(@"%@",claimsData);
             if(error) {
                 NSLog(@"Unable to deserialize token claims: %@", error);
             }
