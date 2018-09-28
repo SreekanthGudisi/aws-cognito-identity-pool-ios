@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E93FFC9E215E096100C34C1B /* Chat1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93FFC95215E096100C34C1B /* Chat1ViewController.swift */; };
 		E93FFC9F215E096100C34C1B /* ChatPool.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E93FFC96215E096100C34C1B /* ChatPool.storyboard */; };
 		E93FFCA0215E096100C34C1B /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93FFC97215E096100C34C1B /* ChatViewController.swift */; };
 		E93FFCA1215E096100C34C1B /* MockMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93FFC99215E096100C34C1B /* MockMessage.swift */; };
@@ -42,13 +41,10 @@
 		E9D9A347215CE8F200B953D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9D9A314215CE8F100B953D7 /* Assets.xcassets */; };
 		E9D9A348215CE8F200B953D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9D9A315215CE8F100B953D7 /* LaunchScreen.storyboard */; };
 		E9D9A349215CE8F200B953D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9D9A317215CE8F100B953D7 /* Main.storyboard */; };
-		E9D9A34A215CE8F200B953D7 /* SomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D9A319215CE8F100B953D7 /* SomeViewController.swift */; };
 		E9D9A34D215CE8F200B953D7 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9D9A320215CE8F100B953D7 /* Home.storyboard */; };
 		E9D9A34E215CE8F200B953D7 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D9A321215CE8F100B953D7 /* HomeTableViewCell.swift */; };
 		E9D9A34F215CE8F200B953D7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D9A322215CE8F100B953D7 /* HomeViewController.swift */; };
 		E9D9A350215CE8F200B953D7 /* Login_Register.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9D9A324215CE8F100B953D7 /* Login_Register.storyboard */; };
-		E9D9A351215CE8F200B953D7 /* SachinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D9A325215CE8F100B953D7 /* SachinViewController.swift */; };
-		E9D9A352215CE8F200B953D7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D9A326215CE8F100B953D7 /* ViewController.swift */; };
 		E9D9A353215CE8F200B953D7 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D9A327215CE8F100B953D7 /* WelcomeViewController.swift */; };
 		E9D9A354215CE8F200B953D7 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9D9A32A215CE8F100B953D7 /* Profile.storyboard */; };
 		E9D9A355215CE8F200B953D7 /* ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D9A32B215CE8F100B953D7 /* ProfileTableViewCell.swift */; };
@@ -63,7 +59,6 @@
 		041DBB450F6BB82023BFA0E3 /* Pods-SampleApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleApp.debug.xcconfig"; path = "Target Support Files/Pods-SampleApp/Pods-SampleApp.debug.xcconfig"; sourceTree = "<group>"; };
 		AEE636EFAED804967652381F /* Pods_SampleApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SampleApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B38DD24684F22AF0D5B6A475 /* Pods-SampleApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleApp.release.xcconfig"; path = "Target Support Files/Pods-SampleApp/Pods-SampleApp.release.xcconfig"; sourceTree = "<group>"; };
-		E93FFC95215E096100C34C1B /* Chat1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chat1ViewController.swift; sourceTree = "<group>"; };
 		E93FFC96215E096100C34C1B /* ChatPool.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ChatPool.storyboard; sourceTree = "<group>"; };
 		E93FFC97215E096100C34C1B /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		E93FFC99215E096100C34C1B /* MockMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockMessage.swift; sourceTree = "<group>"; };
@@ -101,13 +96,10 @@
 		E9D9A314215CE8F100B953D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E9D9A316215CE8F100B953D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E9D9A318215CE8F100B953D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		E9D9A319215CE8F100B953D7 /* SomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SomeViewController.swift; sourceTree = "<group>"; };
 		E9D9A320215CE8F100B953D7 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		E9D9A321215CE8F100B953D7 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		E9D9A322215CE8F100B953D7 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		E9D9A324215CE8F100B953D7 /* Login_Register.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login_Register.storyboard; sourceTree = "<group>"; };
-		E9D9A325215CE8F100B953D7 /* SachinViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SachinViewController.swift; sourceTree = "<group>"; };
-		E9D9A326215CE8F100B953D7 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E9D9A327215CE8F100B953D7 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		E9D9A32A215CE8F100B953D7 /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		E9D9A32B215CE8F100B953D7 /* ProfileTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileTableViewCell.swift; sourceTree = "<group>"; };
@@ -149,7 +141,6 @@
 		E93FFC94215E096100C34C1B /* ChatPoolStrory */ = {
 			isa = PBXGroup;
 			children = (
-				E93FFC95215E096100C34C1B /* Chat1ViewController.swift */,
 				E93FFC96215E096100C34C1B /* ChatPool.storyboard */,
 				E93FFC97215E096100C34C1B /* ChatViewController.swift */,
 				E93FFC98215E096100C34C1B /* MessageKit */,
@@ -191,7 +182,6 @@
 			isa = PBXGroup;
 			children = (
 				E9D9A2ED215CE54B00B953D7 /* Info.plist */,
-				E9D9A359215CE8F800B953D7 /* awsconfiguration.json */,
 				E9D9A2F3215CE8F100B953D7 /* src */,
 				E9D9A2E5215CE54800B953D7 /* SampleApp.xcdatamodeld */,
 			);
@@ -214,6 +204,7 @@
 			isa = PBXGroup;
 			children = (
 				E9D9A2F7215CE8F100B953D7 /* Lambo.entitlements */,
+				E9D9A359215CE8F800B953D7 /* awsconfiguration.json */,
 				E9D9A2F9215CE8F100B953D7 /* Constants.swift */,
 			);
 			path = Constats;
@@ -269,7 +260,6 @@
 				E9D9A314215CE8F100B953D7 /* Assets.xcassets */,
 				E9D9A315215CE8F100B953D7 /* LaunchScreen.storyboard */,
 				E9D9A317215CE8F100B953D7 /* Main.storyboard */,
-				E9D9A319215CE8F100B953D7 /* SomeViewController.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -308,8 +298,6 @@
 			isa = PBXGroup;
 			children = (
 				E9D9A324215CE8F100B953D7 /* Login_Register.storyboard */,
-				E9D9A325215CE8F100B953D7 /* SachinViewController.swift */,
-				E9D9A326215CE8F100B953D7 /* ViewController.swift */,
 				E9D9A327215CE8F100B953D7 /* WelcomeViewController.swift */,
 			);
 			path = Login;
@@ -547,10 +535,7 @@
 			files = (
 				E9D9A345215CE8F200B953D7 /* UIColor - Swift Extension.swift in Sources */,
 				E9D9A2E7215CE54800B953D7 /* SampleApp.xcdatamodeld in Sources */,
-				E9D9A352215CE8F200B953D7 /* ViewController.swift in Sources */,
 				E9D9A358215CE8F200B953D7 /* WalletViewController.swift in Sources */,
-				E93FFC9E215E096100C34C1B /* Chat1ViewController.swift in Sources */,
-				E9D9A351215CE8F200B953D7 /* SachinViewController.swift in Sources */,
 				E9D9A353215CE8F200B953D7 /* WelcomeViewController.swift in Sources */,
 				E9D9A356215CE8F200B953D7 /* ProfileViewController.swift in Sources */,
 				E9D9A344215CE8F200B953D7 /* GradientView.swift in Sources */,
@@ -562,7 +547,6 @@
 				E9D9A2DF215CE54800B953D7 /* AppDelegate.swift in Sources */,
 				E93FFCA4215E096100C34C1B /* MessageKitError.swift in Sources */,
 				E9D9A330215CE8F100B953D7 /* Constants.swift in Sources */,
-				E9D9A34A215CE8F200B953D7 /* SomeViewController.swift in Sources */,
 				E93FFCA1215E096100C34C1B /* MockMessage.swift in Sources */,
 				E93FFCA3215E096100C34C1B /* Settings+UserDefaults.swift in Sources */,
 				E9D9A343215CE8F200B953D7 /* Branding.swift in Sources */,

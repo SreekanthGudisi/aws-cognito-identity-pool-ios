@@ -26,62 +26,10 @@
             </objects>
             <point key="canvasLocation" x="416" y="593"/>
         </scene>
-        <!--Chat1 View Controller-->
-        <scene sceneID="HbH-U4-zJg">
-            <objects>
-                <viewController storyboardIdentifier="Chat1ViewController" id="5tS-cC-Fbi" customClass="Chat1ViewController" customModule="Lambo" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="OM5-WU-Q1P">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="563"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XcF-gJ-QSM">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="563"/>
-                                <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter ur Questions" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1IE-oM-tbY">
-                                        <rect key="frame" x="40" y="73" width="295" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                        <connections>
-                                            <outlet property="delegate" destination="5tS-cC-Fbi" id="bfb-RA-uZW"/>
-                                        </connections>
-                                    </textField>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xuL-jl-mpR">
-                                        <rect key="frame" x="40" y="156" width="295" height="196"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </view>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="XcF-gJ-QSM" firstAttribute="trailing" secondItem="jN8-dJ-gyz" secondAttribute="trailing" id="BbB-aI-620"/>
-                            <constraint firstItem="XcF-gJ-QSM" firstAttribute="leading" secondItem="jN8-dJ-gyz" secondAttribute="leading" id="CJa-JP-Fk0"/>
-                            <constraint firstItem="XcF-gJ-QSM" firstAttribute="top" secondItem="OM5-WU-Q1P" secondAttribute="top" id="dS9-dt-eFg"/>
-                            <constraint firstItem="XcF-gJ-QSM" firstAttribute="bottom" secondItem="jN8-dJ-gyz" secondAttribute="bottom" id="ibq-9j-d0u"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="jN8-dJ-gyz"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="8bn-z7-0TT"/>
-                    <size key="freeformSize" width="375" height="563"/>
-                    <connections>
-                        <outlet property="answerLabel" destination="xuL-jl-mpR" id="qDc-eG-Gag"/>
-                        <outlet property="questionsTextField" destination="1IE-oM-tbY" id="14h-5E-KE6"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="0M8-EC-wFX" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1256.8" y="591.45427286356824"/>
-        </scene>
         <!--Chat View Controller-->
         <scene sceneID="0iK-PP-hvC">
             <objects>
-                <viewController storyboardIdentifier="ChatViewController" wantsFullScreenLayout="YES" providesPresentationContextTransitionStyle="YES" id="FvN-Ld-AvF" customClass="ChatViewController" customModule="Lambo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ChatViewController" wantsFullScreenLayout="YES" providesPresentationContextTransitionStyle="YES" id="FvN-Ld-AvF" customClass="ChatViewController" customModule="SampleApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" clipsSubviews="YES" contentMode="scaleToFill" id="ciD-NN-e1G">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="563"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
