@@ -1,0 +1,192 @@
+PODS:
+  - AWSAuth (2.6.31):
+    - AWSAuth/Core (= 2.6.31)
+    - AWSAuth/FacebookSignIn (= 2.6.31)
+    - AWSAuth/GoogleSignIn (= 2.6.31)
+    - AWSAuth/UI (= 2.6.31)
+    - AWSAuth/UserPoolsSignIn (= 2.6.31)
+  - AWSAuth/Core (2.6.31):
+    - AWSAuthCore (= 2.6.31)
+  - AWSAuth/FacebookSignIn (2.6.31):
+    - AWSFacebookSignIn (= 2.6.31)
+  - AWSAuth/GoogleSignIn (2.6.31):
+    - AWSGoogleSignIn (= 2.6.31)
+  - AWSAuth/UI (2.6.31):
+    - AWSAuthUI (= 2.6.31)
+  - AWSAuth/UserPoolsSignIn (2.6.31):
+    - AWSUserPoolsSignIn (= 2.6.31)
+  - AWSAuthCore (2.6.31):
+    - AWSCore (= 2.6.31)
+  - AWSAuthUI (2.6.31):
+    - AWSAuthCore (= 2.6.31)
+    - AWSCore (= 2.6.31)
+  - AWSAutoScaling (2.6.31):
+    - AWSCore (= 2.6.31)
+  - AWSCloudWatch (2.6.31):
+    - AWSCore (= 2.6.31)
+  - AWSCognito (2.6.31):
+    - AWSCore (= 2.6.31)
+  - AWSCognitoAuth (2.6.31):
+    - AWSCognitoIdentityProviderASF (= 1.0.1)
+  - AWSCognitoIdentityProvider (2.6.31):
+    - AWSCognitoIdentityProviderASF (= 1.0.1)
+    - AWSCore (= 2.6.31)
+  - AWSCognitoIdentityProviderASF (1.0.1)
+  - AWSCore (2.6.31)
+  - AWSDynamoDB (2.6.31):
+    - AWSCore (= 2.6.31)
+  - AWSFacebookSignIn (2.6.31):
+    - AWSAuthCore (= 2.6.31)
+    - FBSDKCoreKit (~> 4.0)
+    - FBSDKLoginKit (~> 4.0)
+  - AWSGoogleSignIn (2.6.31):
+    - AWSAuthCore (= 2.6.31)
+  - AWSLambda (2.6.31):
+    - AWSCore (= 2.6.31)
+  - AWSLex (2.6.31):
+    - AWSCore (= 2.6.31)
+  - AWSLogs (2.6.31):
+    - AWSCore (= 2.6.31)
+  - AWSMobileClient (2.6.31):
+    - AWSAuthCore (= 2.6.31)
+  - AWSPinpoint (2.6.31):
+    - AWSCore (= 2.6.31)
+  - AWSUserPoolsSignIn (2.6.31):
+    - AWSAuthCore (= 2.6.31)
+    - AWSCognitoIdentityProvider (= 2.6.31)
+  - Bolts (1.9.0):
+    - Bolts/AppLinks (= 1.9.0)
+    - Bolts/Tasks (= 1.9.0)
+  - Bolts/AppLinks (1.9.0):
+    - Bolts/Tasks
+  - Bolts/Tasks (1.9.0)
+  - FBSDKCoreKit (4.36.0):
+    - Bolts (~> 1.7)
+  - FBSDKLoginKit (4.36.0):
+    - FBSDKCoreKit
+  - GoogleSignIn (4.2.0):
+    - "GoogleToolboxForMac/NSDictionary+URLArguments (~> 2.1)"
+    - "GoogleToolboxForMac/NSString+URLArguments (~> 2.1)"
+    - GTMOAuth2 (~> 1.0)
+    - GTMSessionFetcher/Core (~> 1.1)
+  - GoogleToolboxForMac/DebugUtils (2.1.4):
+    - GoogleToolboxForMac/Defines (= 2.1.4)
+  - GoogleToolboxForMac/Defines (2.1.4)
+  - "GoogleToolboxForMac/NSDictionary+URLArguments (2.1.4)":
+    - GoogleToolboxForMac/DebugUtils (= 2.1.4)
+    - GoogleToolboxForMac/Defines (= 2.1.4)
+    - "GoogleToolboxForMac/NSString+URLArguments (= 2.1.4)"
+  - "GoogleToolboxForMac/NSString+URLArguments (2.1.4)"
+  - GTMOAuth2 (1.1.6):
+    - GTMSessionFetcher (~> 1.1)
+  - GTMSessionFetcher (1.2.0):
+    - GTMSessionFetcher/Full (= 1.2.0)
+  - GTMSessionFetcher/Core (1.2.0)
+  - GTMSessionFetcher/Full (1.2.0):
+    - GTMSessionFetcher/Core (= 1.2.0)
+  - IQKeyboardManagerSwift (6.1.1)
+  - JSQMessagesViewController (7.3.5):
+    - JSQSystemSoundPlayer (~> 2.0.1)
+  - JSQSystemSoundPlayer (2.0.1)
+  - MessageKit (1.0.0)
+  - NVActivityIndicatorView (4.4.0):
+    - NVActivityIndicatorView/Presenter (= 4.4.0)
+  - NVActivityIndicatorView/Presenter (4.4.0)
+
+DEPENDENCIES:
+  - AWSAuth
+  - AWSAuthCore
+  - AWSAuthUI
+  - AWSAutoScaling
+  - AWSCloudWatch
+  - AWSCognito
+  - AWSCognitoAuth (~> 2.6.7)
+  - AWSCognitoIdentityProvider
+  - AWSCognitoIdentityProvider (~> 2.6.0)
+  - AWSCognitoIdentityProviderASF
+  - AWSCore (~> 2.6.0)
+  - AWSDynamoDB
+  - AWSFacebookSignIn
+  - AWSGoogleSignIn
+  - AWSLambda
+  - AWSLex
+  - AWSLogs
+  - AWSMobileClient
+  - AWSPinpoint
+  - AWSUserPoolsSignIn
+  - GoogleSignIn
+  - IQKeyboardManagerSwift
+  - JSQMessagesViewController (~> 7.3.4)
+  - MessageKit
+  - NVActivityIndicatorView
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - AWSAuth
+    - AWSAuthCore
+    - AWSAuthUI
+    - AWSAutoScaling
+    - AWSCloudWatch
+    - AWSCognito
+    - AWSCognitoAuth
+    - AWSCognitoIdentityProvider
+    - AWSCognitoIdentityProviderASF
+    - AWSCore
+    - AWSDynamoDB
+    - AWSFacebookSignIn
+    - AWSGoogleSignIn
+    - AWSLambda
+    - AWSLex
+    - AWSLogs
+    - AWSMobileClient
+    - AWSPinpoint
+    - AWSUserPoolsSignIn
+    - Bolts
+    - FBSDKCoreKit
+    - FBSDKLoginKit
+    - GoogleSignIn
+    - GoogleToolboxForMac
+    - GTMOAuth2
+    - GTMSessionFetcher
+    - IQKeyboardManagerSwift
+    - JSQMessagesViewController
+    - JSQSystemSoundPlayer
+    - MessageKit
+    - NVActivityIndicatorView
+
+SPEC CHECKSUMS:
+  AWSAuth: b2be76413a840e4ca92858b29b36551041754879
+  AWSAuthCore: 48c38a368b75de8d86341727e6e4226245ff2fe9
+  AWSAuthUI: 5d5b10cdb957ba531e977fa107ed746f946a8c6a
+  AWSAutoScaling: dd4e9b81861c7dc5e0a7305abf23b8751c3d07e8
+  AWSCloudWatch: faec75a930863dc7cab86cd72a15e5bc8bda0657
+  AWSCognito: c6bc1f7814ca3484b8ed76ba7f319ffea7c19e68
+  AWSCognitoAuth: 8b26c297c0f4b00f8fa8cac8fe2ce24ee53e2369
+  AWSCognitoIdentityProvider: c74a83c8226a9f43607f2772742000bccb5cc58a
+  AWSCognitoIdentityProviderASF: f94f1a502e72ef3d0a1de93e10bf7a79c8698118
+  AWSCore: c7abfb87ef802d1c4b5dd56db64ac8b4a7823ef0
+  AWSDynamoDB: eb3eb7d49b14f1e523afa80373a8ab0fbde935a9
+  AWSFacebookSignIn: 35250094eb0cef0eb8f8f52a72129799bce0d944
+  AWSGoogleSignIn: a836e525a3bb9c7faa4e3d310ab1720eb6e6377e
+  AWSLambda: b178a3eea78c9d3f6d88d3ec711ea03a80ac37f7
+  AWSLex: 15201861fef13f2f8c1719352f481da57db16b3b
+  AWSLogs: 9dd932380dc470cb5103e2d4867c243e72a07700
+  AWSMobileClient: 16b123da959f2c4f735eec9386b9b19f25231126
+  AWSPinpoint: d5031f793f1f6d30e6a345464a26353e42bf5515
+  AWSUserPoolsSignIn: ac921e877e2b3b2327e77b1e2af9eaf147f8c2d8
+  Bolts: ac6567323eac61e203f6a9763667d0f711be34c8
+  FBSDKCoreKit: 3b8e6570eedb443f9fc4af196a7bf39f18e3a3d8
+  FBSDKLoginKit: 8bccb6064708ab2f4251a7fc4e3b6d8d00ad91ba
+  GoogleSignIn: 591e46382014e591269f862ba6e7bc0fbd793532
+  GoogleToolboxForMac: 91c824d21e85b31c2aae9bb011c5027c9b4e738f
+  GTMOAuth2: c77fe325e4acd453837e72d91e3b5f13116857b2
+  GTMSessionFetcher: 0c4baf0a73acd0041bf9f71ea018deedab5ea84e
+  IQKeyboardManagerSwift: 977affaeb4d6e971975c7790a6850f31d38f1207
+  JSQMessagesViewController: 6587f56aedbcb150a8ba1d968e1ef58b1bc758b7
+  JSQSystemSoundPlayer: c5850e77a4363ffd374cd851154b9af93264ed8d
+  MessageKit: 16160036b16476b04bd0e9f2c7ce67e662e503e4
+  NVActivityIndicatorView: ec7440a57af2450319d3a4181cca7da6fc127064
+
+PODFILE CHECKSUM: baee7cf9d715cec5981b4a576e0a459e588be897
+
+COCOAPODS: 1.6.0.beta.1
