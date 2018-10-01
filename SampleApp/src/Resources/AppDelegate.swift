@@ -36,14 +36,27 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // LEX Data
         //replace the XXXXXs with your own id
         let credentialsProvider = AWSCognitoCredentialsProvider(regionType: CognitoRegionLex, identityPoolId: CognitoIdentityPoolIdLex)
-        
         let configuration = AWSServiceConfiguration(region: LexRegionLex, credentialsProvider: credentialsProvider)
         AWSServiceManager.default().defaultServiceConfiguration = configuration
         
         let chatConfig = AWSLexInteractionKitConfig.defaultInteractionKitConfig(withBotName: BotNameLex, botAlias: BotAliasLex)
         AWSLexInteractionKit.register(with: configuration!, interactionKitConfiguration: chatConfig, forKey: "AWSLexVoiceButton")
         chatConfig.autoPlayback = false
-        AWSLexInteractionKit.register(with: configuration!, interactionKitConfiguration: chatConfig, forKey: "chatConfig")
+        AWSLexInteractionKit.register(with: configuration!, interactionKitConfiguration: chatConfig, forKey: "LamboBot")
+        
+        let syncClient = AWSCognito.default()
+        let dataSet = syncClient.openOrCreateDataset("Preferences")
+        let existingData = dataSet.getAllRecords()
+        if existingData == nil {
+            dataSet.setString("iOSApp", forKey: "Lambo")
+            dataSet.synchronize().continueWith(block: { (task: AWSTask!) -> Any? in
+                // Your code handle here
+                print("U have to configue on IAM role")
+                return nil
+            })
+        }else {
+            print("Existing Data :-" ,existingData ?? [])
+        }
         
         return AWSMobileClient.sharedInstance().interceptApplication(
             application, didFinishLaunchingWithOptions:

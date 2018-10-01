@@ -4,7 +4,7 @@
     "CredentialsProvider": {
         "CognitoIdentity": {
             "Default": {
-                "PoolId": "us-east-1:c5c99941-47e3-4ec7-8a69-b0c886680dc6",
+                "PoolId": "us-east-1:89c52583-1296-4fd2-bf89-d1c71ce84f02",
                 "Region": "us-east-1"
             }
         }
@@ -12,14 +12,26 @@
     "IdentityManager": {
         "Default": {}
     },
+    "S3TransferUtility": {
+        "Default": {
+            "Bucket": "lambooct-userfiles-mobilehub-1304517688",
+            "Region": "us-east-1"
+        }
+    },
     "PinpointAnalytics": {
         "Default": {
-            "AppId": "0716a05cbbc74310bd419284d5707165",
+            "AppId": "184257a9a55043de8781fdbaf0af1b95",
             "Region": "us-east-1"
         }
     },
     "PinpointTargeting": {
         "Default": {
+            "Region": "us-east-1"
+        }
+    },
+    "UserFileManager": {
+        "Default": {
+            "Bucket": "lambooct-userfiles-mobilehub-1304517688",
             "Region": "us-east-1"
         }
     },
@@ -32,4 +44,3 @@
         "Permissions": "public_profile"
     }
 }
-

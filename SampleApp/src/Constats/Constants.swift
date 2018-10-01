@@ -21,7 +21,7 @@ import AWSCognitoIdentityProvider
 //let AWSCognitoUserPoolsSignInProviderKey = "UserPool"
 
 
-let CognitoIdentityPoolIdLex = "us-east-1:c5c99941-47e3-4ec7-8a69-b0c886680dc6"     // Put your Cognito Identity Pool ID here
+let CognitoIdentityPoolIdLex = "us-east-1:89c52583-1296-4fd2-bf89-d1c71ce84f02"     // Put your Cognito Identity Pool ID here
 let CognitoRegionLex = AWSRegionType.USEast1                   // Put your Cognito region here
 let LexRegionLex = AWSRegionType.USEast1                       // Change this is this is not your Lex region (most are currently AWSRegionType.USEast1)
 let BotNameLex = "LamboBot"                                     // Put your bot name here
