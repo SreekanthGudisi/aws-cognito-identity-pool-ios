@@ -21,6 +21,8 @@ import AWSAuthCore
 import AWSAuthUI
 import AWSMobileClient
 import CoreGraphics
+import AWSLex
+import AWSCognito
 
 class HomeViewController: UIViewController{
     
@@ -104,6 +106,8 @@ class HomeViewController: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        syncData()
         
         isSelect = true
         isChatSelect = true
@@ -639,3 +643,24 @@ extension CALayer {
         self.insertSublayer(gradient, at: 0)
     }
 }
+
+extension HomeViewController {
+    
+    func syncData() {
+        
+        let syncClient = AWSCognito.default()
+        let dataSet = syncClient.openOrCreateDataset("test")
+        let existingData = dataSet.getAllRecords()
+        if existingData == nil {
+            dataSet.setString("iOSApp1", forKey: "Lambo1")
+            dataSet.synchronize().continueWith(block: { (task: AWSTask!) -> Any? in
+                // Your code handle here
+                print("U have to configue on IAM role")
+                return nil
+            })
+        }else {
+            print("Existing Data :-" ,existingData ?? [])
+        }
+    }
+}
+

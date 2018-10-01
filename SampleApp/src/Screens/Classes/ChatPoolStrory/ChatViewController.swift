@@ -24,9 +24,6 @@ import AWSAuthCore
 import FBSDKLoginKit
 import FBSDKCoreKit
 
-let ClientSenderId = "Client"
-let ServerSenderId = "Server"
-
 class ChatViewController: MessagesViewController {
     
     var sender: Sender?
@@ -53,7 +50,7 @@ class ChatViewController: MessagesViewController {
         
         count = 0
         
-        self.interactionKit = AWSLexInteractionKit.init(forKey: "chatConfig")
+        self.interactionKit = AWSLexInteractionKit.init(forKey: "LamboBot")
         self.interactionKit?.interactionDelegate = self
         let messagesToFetch = UserDefaults.standard.mockMessagesCount()
         DispatchQueue.global(qos: .userInitiated).async {

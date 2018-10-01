@@ -12,6 +12,7 @@ import AWSMobileClient
 import IQKeyboardManagerSwift
 import AWSCore
 import AWSLex
+import AWSCognito
 
 
 @UIApplicationMain
@@ -43,21 +44,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         AWSLexInteractionKit.register(with: configuration!, interactionKitConfiguration: chatConfig, forKey: "AWSLexVoiceButton")
         chatConfig.autoPlayback = false
         AWSLexInteractionKit.register(with: configuration!, interactionKitConfiguration: chatConfig, forKey: "LamboBot")
-        
-        let syncClient = AWSCognito.default()
-        let dataSet = syncClient.openOrCreateDataset("Preferences")
-        let existingData = dataSet.getAllRecords()
-        if existingData == nil {
-            dataSet.setString("iOSApp", forKey: "Lambo")
-            dataSet.synchronize().continueWith(block: { (task: AWSTask!) -> Any? in
-                // Your code handle here
-                print("U have to configue on IAM role")
-                return nil
-            })
-        }else {
-            print("Existing Data :-" ,existingData ?? [])
-        }
-        
+
         return AWSMobileClient.sharedInstance().interceptApplication(
             application, didFinishLaunchingWithOptions:
             launchOptions)

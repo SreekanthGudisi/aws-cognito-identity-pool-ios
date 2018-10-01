@@ -16,6 +16,8 @@ import AWSGoogleSignIn
 import AWSAuthCore
 import FBSDKLoginKit
 import FBSDKCoreKit
+import AWSLex
+import AWSCognito
 
 class WelcomeViewController: UIViewController{
     
@@ -34,6 +36,7 @@ class WelcomeViewController: UIViewController{
         // Do any additional setup after loading the view.
         self.navigationController?.navigationBar.isHidden = true
         isSelect = true
+
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -118,6 +121,7 @@ extension UIColor {
         }
     }
 }
+
 
 
 
