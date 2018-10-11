@@ -16,9 +16,25 @@
 // IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
 // CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-#import <Foundation/Foundation.h>
+#import "FBSDKAppLink.h"
 
+FOUNDATION_EXPORT NSString *const FBSDKAppLinkDataParameterName;
+FOUNDATION_EXPORT NSString *const FBSDKAppLinkTargetKeyName;
+FOUNDATION_EXPORT NSString *const FBSDKAppLinkUserAgentKeyName;
+FOUNDATION_EXPORT NSString *const FBSDKAppLinkExtrasKeyName;
+FOUNDATION_EXPORT NSString *const FBSDKAppLinkVersionKeyName;
+FOUNDATION_EXPORT NSString *const FBSDKAppLinkRefererAppLink;
+FOUNDATION_EXPORT NSString *const FBSDKAppLinkRefererAppName;
+FOUNDATION_EXPORT NSString *const FBSDKAppLinkRefererUrl;
 
-@interface FBSDKAppEventsUninstall : NSObject
+@interface FBSDKAppLink (Internal)
+
++ (instancetype)appLinkWithSourceURL:(NSURL *)sourceURL
+                             targets:(NSArray<FBSDKAppLinkTarget *> *)targets
+                              webURL:(NSURL *)webURL
+                    isBackToReferrer:(BOOL)isBackToReferrer;
+
+/*! return if this AppLink is to go back to referrer. */
+@property (nonatomic, assign, readonly, getter=isBackToReferrer) BOOL backToReferrer;
 
 @end

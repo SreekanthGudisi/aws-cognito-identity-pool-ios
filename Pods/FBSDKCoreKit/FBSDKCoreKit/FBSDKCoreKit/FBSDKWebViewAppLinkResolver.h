@@ -18,7 +18,21 @@
 
 #import <Foundation/Foundation.h>
 
+#import "FBSDKAppLinkResolving.h"
 
-@interface FBSDKAppEventsUninstall : NSObject
+NS_ASSUME_NONNULL_BEGIN
+
+/*!
+ A reference implementation for an App Link resolver that uses a hidden UIWebView
+ to parse the HTML containing App Link metadata.
+ */
+@interface FBSDKWebViewAppLinkResolver : NSObject <FBSDKAppLinkResolving>
+
+/*!
+ Gets the instance of a FBSDKWebViewAppLinkResolver.
+ */
++ (instancetype)sharedInstance;
 
 @end
+
+NS_ASSUME_NONNULL_END

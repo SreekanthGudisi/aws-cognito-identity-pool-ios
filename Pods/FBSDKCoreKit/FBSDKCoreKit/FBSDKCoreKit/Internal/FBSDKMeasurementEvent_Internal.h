@@ -16,9 +16,18 @@
 // IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
 // CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-#import <Foundation/Foundation.h>
+#import "FBSDKMeasurementEvent.h"
 
+NS_ASSUME_NONNULL_BEGIN
 
-@interface FBSDKAppEventsUninstall : NSObject
+/*!
+ Provides methods for posting notifications from the Bolts framework
+ */
+@interface FBSDKMeasurementEvent (Internal)
+
++ (void)postNotificationForEventName:(NSString *)name
+                                args:(NSDictionary<NSString *, id> *)args;
 
 @end
+
+NS_ASSUME_NONNULL_END
